@@ -1,0 +1,12 @@
+{
+  "name": "DAC8830",
+  "keywords": "SPI, DAC, sensor",
+  "description": "Arduino Library for DAC8830.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "version": "1.0.0", 
+  "frameworks": "arduino",
+  "platforms": ["Atmel AVR", "espressif8266", "espressif32"]
+}
