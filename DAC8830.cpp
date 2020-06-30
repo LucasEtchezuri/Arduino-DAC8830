@@ -54,4 +54,5 @@ void DAC8830::begin(uint8_t clk_pin, uint8_t mosi_pin, uint8_t cs_pin)
 
   // Configure chip select as an output
   pinMode(DAC8830_CS_PIN, OUTPUT);
+  digitalWrite(DAC8830_CS_PIN, HIGH);
 }
