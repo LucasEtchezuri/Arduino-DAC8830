@@ -35,7 +35,24 @@ void DAC8830::setMillivolts(uint16_t value)
   else
   {
     float x = (65535.00 / DAC8830_REFERENCE_MV);
-    writeDAC(x * value);
+    writeDAC((int)(x * value));
+  }
+}
+
+void DAC8830::setMillivolts10(uint16_t value)
+{
+  if (DAC8830_REFERENCE_MV <= 0)
+  {
+    writeDAC(0);
+  }
+  else if (value > (DAC8830_REFERENCE_MV * 10))
+  {
+    writeDAC(65535);
+  }
+  else
+  {
+    float x = (65535.00 / (DAC8830_REFERENCE_MV * 10));
+    writeDAC((int)(x * value));
   }
 }
 

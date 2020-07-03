@@ -14,5 +14,6 @@ class DAC8830 {
     void writeDAC(uint16_t value);
     void setReference(int16_t value);
     void setMillivolts(uint16_t value);
+    void setMillivolts10(uint16_t value);
   };
 #endif
