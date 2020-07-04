@@ -5,7 +5,7 @@
 
 #define CS_PIN 18
 
-#include "DAC8830.h"
+#include <DAC8830.h>
 
 DAC8830 dac;
 
@@ -24,4 +24,6 @@ void loop()
   dac.setMillivolts(1000);  // Set the output voltage to 3000 mv.  This function use setReference.  use setReference BEFORE use this function.
   delay(2000);
 
+  dac.setMillivolts10(25);  // Set the output voltage to 2.5 mv.  This function use setReference.  use setReference BEFORE use this function.
+  delay(2000);
 }
