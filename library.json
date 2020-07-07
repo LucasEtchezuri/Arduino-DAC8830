@@ -4,9 +4,9 @@
   "description": "Arduino Library for DAC8830.",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/LucasEtchezuri/Arduino-DAC8830.git"
   },
   "version": "1.1.0", 
   "frameworks": "arduino",
-  "platforms": ["Atmel AVR", "espressif8266", "espressif32"]
+  "platforms": ["atmelavr", "espressif8266", "espressif32"]
 }
